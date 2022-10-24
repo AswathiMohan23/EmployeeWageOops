@@ -5,9 +5,15 @@ public class Employee {
     private final int PRESENT=1;
     private int empId;
     private String name;
-
+    private String companyName;
+    private String wage;
+    private int workingHours;
     private  int totalWorkingDays=20;
     private int empHours;
+
+    public Employee() {
+
+    }
 
 
     public int getABSENT() {
@@ -25,6 +31,7 @@ public class Employee {
     public int getTotalWorkingDays() {
         return totalWorkingDays;
     }
+
 
     public void setTotalWorkingDays(int totalWorkingDays) {
         this.totalWorkingDays = totalWorkingDays;
@@ -50,14 +57,25 @@ public class Employee {
         this.name = name;
     }
 
+    public Employee( String name, String companyName,int empId, String wage, int workingHours, int totalWorkingDays) {
+        this.empId = empId;
+        this.name = name;
+        this.companyName = companyName;
+        this.wage = wage;
+        this.workingHours = workingHours;
+        this.totalWorkingDays = totalWorkingDays;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
-                "ABSENT=" + ABSENT +
-                ", PRESENT=" + PRESENT +
-                ", empId=" + empId +
+                "empId=" + empId +
                 ", name='" + name + '\'' +
-                ", empHours=" + empHours +
+                ", companyName='" + companyName + '\'' +
+                ", wage='" + wage + '\'' +
+                ", workingHours=" + workingHours +
+                ", totalWorkingDays=" + totalWorkingDays +
                 '}';
     }
 }
+

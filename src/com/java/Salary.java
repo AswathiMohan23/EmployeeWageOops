@@ -29,7 +29,13 @@ public class Salary {
             totalWorkingDays = employee.getTotalWorkingDays();
         }
         while ((totalMonthlyHours < 100) && (totalWorkingDays <= 20));
+        multipleCompaniesEmpWage();
     }
 
-
+    public static void multipleCompaniesEmpWage(){
+        Employee employee1=new Employee("tom","wipro",1,"2000",20,30);
+        Employee employee2=new Employee("John","tcs",3,"5000",30,20);
+        Employee employee3=new Employee("Anna","bosch",1,"8000",20,25);
+        System.out.println("\nwages for different companies: \n"+employee1.toString()+"\n"+employee2.toString()+"\n"+employee3.toString()+"\n");
+    }
 }
