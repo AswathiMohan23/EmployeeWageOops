@@ -3,12 +3,12 @@ package com.java;
 import java.util.ArrayList;
 
 
-public class CompanyEmpWageBuilder {
+public class CompanyEmpWageBuilder implements EmpBuilderInterface{
     Employee employee=new Employee();
     ArrayList wiproList=new ArrayList<>();
     ArrayList tcsList=new ArrayList<>();
     ArrayList boschList=new ArrayList<>();
-
+@Override
     public void detailsOfWipro() {
         employee.setName("Tom");
         employee.setCompanyName("Wipro");
@@ -23,6 +23,7 @@ public class CompanyEmpWageBuilder {
         System.out.println("Details of Wipro as list : "+wiproList);
         System.out.println("Details of Wipro : "+employee.toString());
     }
+    @Override
     public void detailsOfTCS() {
         employee.setName("John");
         employee.setCompanyName("TCS");
@@ -35,7 +36,10 @@ public class CompanyEmpWageBuilder {
         tcsList.add(employee.getWorkingHours());
         tcsList.add(employee.getTotalWorkingDays());
         System.out.println("Details of TCS as list : "+tcsList);
-        System.out.println("Details of bosch : "+employee.toString());    }
+        System.out.println("Details of bosch : "+employee.toString());
+    }
+
+    @Override
     public void detailsOfBosch() {
         employee.setName("Anna");
         employee.setCompanyName("bosch");
@@ -50,5 +54,6 @@ public class CompanyEmpWageBuilder {
         System.out.println("Details of Bosch as list : "+boschList);
         System.out.println("Details of bosch : "+employee.toString());
     }
+
 
 }
