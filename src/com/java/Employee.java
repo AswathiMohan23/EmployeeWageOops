@@ -5,7 +5,7 @@ public class Employee {
     private final int PRESENT=1;
     private int empId;
     private String name;
-    private int dailyWage;
+    private String dailyWage;
     private String companyName;
 
     private String wage;
@@ -13,11 +13,11 @@ public class Employee {
     private  int totalWorkingDays=20;
     private int empHours;
 
-    public int getDailyWage() {
+    public String getDailyWage() {
         return dailyWage;
     }
 
-    public void setDailyWage(int dailyWage) {
+    public void setDailyWage(String dailyWage) {
         this.dailyWage = dailyWage;
     }
 
@@ -116,5 +116,6 @@ public class Employee {
                 '}';
     }
 }
+
 
 
