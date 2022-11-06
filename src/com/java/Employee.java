@@ -6,10 +6,35 @@ public class Employee {
     private int empId;
     private String name;
     private String companyName;
+
     private String wage;
     private int workingHours;
     private  int totalWorkingDays=20;
     private int empHours;
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getWage() {
+        return wage;
+    }
+
+    public void setWage(String wage) {
+        this.wage = wage;
+    }
+
+    public int getWorkingHours() {
+        return workingHours;
+    }
+
+    public void setWorkingHours(int workingHours) {
+        this.workingHours = workingHours;
+    }
 
     public Employee() {
 
