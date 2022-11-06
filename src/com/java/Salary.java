@@ -35,8 +35,9 @@ public class Salary {
     public static void multipleCompaniesEmpWage(){
         EmpWageBuilderWipro wipro=new EmpWageBuilderWipro();
         EmpWageBuilderTCS tcs=new EmpWageBuilderTCS();
+        EmpWageBuilderBosch bosch=new EmpWageBuilderBosch();
         wipro.totalWageAndDetails();
         tcs.totalWageAndDetails();
-        Employee employee3=new Employee("Anna","bosch",1,"8000",20,25);
+        bosch.totalWageAndDetails();
     }
 }
