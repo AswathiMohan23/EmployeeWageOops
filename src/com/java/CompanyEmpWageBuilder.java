@@ -12,9 +12,10 @@ public class CompanyEmpWageBuilder implements EmpBuilderInterface{
     public void detailsOfWipro() {
         employee.setName("Tom");
         employee.setCompanyName("Wipro");
-        employee.setWage("2000");
+        employee.setWage("60,000");
         employee.setWorkingHours(20);
         employee.setTotalWorkingDays(30);
+        employee.setDailyWage(2000);
         wiproList.add(employee.getName());
         wiproList.add(employee.getCompanyName());
         wiproList.add(employee.getWage());
@@ -27,9 +28,10 @@ public class CompanyEmpWageBuilder implements EmpBuilderInterface{
     public void detailsOfTCS() {
         employee.setName("John");
         employee.setCompanyName("TCS");
-        employee.setWage("5000");
+        employee.setWage("20,000");
         employee.setWorkingHours(30);
         employee.setTotalWorkingDays(20);
+        employee.setDailyWage(1000);
         tcsList.add(employee.getName());
         tcsList.add(employee.getCompanyName());
         tcsList.add(employee.getWage());
@@ -43,9 +45,10 @@ public class CompanyEmpWageBuilder implements EmpBuilderInterface{
     public void detailsOfBosch() {
         employee.setName("Anna");
         employee.setCompanyName("bosch");
-        employee.setWage("8000");
+        employee.setWage("80,000");
         employee.setWorkingHours(20);
         employee.setTotalWorkingDays(25);
+        employee.setDailyWage(3200);
         boschList.add(employee.getName());
         boschList.add(employee.getCompanyName());
         boschList.add(employee.getWage());

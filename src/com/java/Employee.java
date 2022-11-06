@@ -5,12 +5,21 @@ public class Employee {
     private final int PRESENT=1;
     private int empId;
     private String name;
+    private int dailyWage;
     private String companyName;
 
     private String wage;
     private int workingHours;
     private  int totalWorkingDays=20;
     private int empHours;
+
+    public int getDailyWage() {
+        return dailyWage;
+    }
+
+    public void setDailyWage(int dailyWage) {
+        this.dailyWage = dailyWage;
+    }
 
     public String getCompanyName() {
         return companyName;
@@ -94,13 +103,18 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                " empId=" + empId +
+                "ABSENT=" + ABSENT +
+                ", PRESENT=" + PRESENT +
+                ", empId=" + empId +
                 ", name='" + name + '\'' +
+                ", dailyWage=" + dailyWage +
                 ", companyName='" + companyName + '\'' +
                 ", wage='" + wage + '\'' +
                 ", workingHours=" + workingHours +
                 ", totalWorkingDays=" + totalWorkingDays +
+                ", empHours=" + empHours +
                 '}';
     }
 }
+
 
