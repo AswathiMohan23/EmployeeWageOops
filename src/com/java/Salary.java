@@ -32,12 +32,10 @@ public class Salary {
         multipleCompaniesEmpWage();
     }
 
-    public static void multipleCompaniesEmpWage(){
-        EmpWageBuilderWipro wipro=new EmpWageBuilderWipro();
-        EmpWageBuilderTCS tcs=new EmpWageBuilderTCS();
-        EmpWageBuilderBosch bosch=new EmpWageBuilderBosch();
-        wipro.totalWageAndDetails();
-        tcs.totalWageAndDetails();
-        bosch.totalWageAndDetails();
+    public static void multipleCompaniesEmpWage() {
+        CompanyEmpWageBuilder companyEmpWageBuilder = new CompanyEmpWageBuilder();
+        companyEmpWageBuilder.detailsOfWipro();
+        companyEmpWageBuilder.detailsOfTCS();
+        companyEmpWageBuilder.detailsOfBosch();
     }
 }
